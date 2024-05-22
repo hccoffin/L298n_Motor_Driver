@@ -43,3 +43,8 @@ void L298n::set(int16_t dutya, int16_t dutyb) {
 		analogWrite(this->pwmb, -dutyb);
 	}
 }
+
+void L298n::set_freq(int freq) {
+	analogWriteFrequency(pwma, freq);
+	analogWriteFrequency(pwmb, freq);
+}

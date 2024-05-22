@@ -13,4 +13,5 @@ class L298n
 			uint8_t pwmb, uint8_t forb, uint8_t revb
 		);
 		void set(int16_t dutya, int16_t dutyb);
+		void set_freq(int freq);
 };
